@@ -1,0 +1,19 @@
+$primary-color: #000;
+$primary-background-color: #fff;
+$primary-border-color: $primary-color;
+
+$primary-color-dark: #fff;
+$primary-background-color-dark: #000;
+$primary-border-color-dark: $primary-color-dark;
+
+$COLORS_LIGHT_MODE: (
+    foreground-color: $primary-color,
+    background-color: $primary-background-color,
+    border-color: $primary-border-color,
+);
+
+$COLORS_DARK_MODE: (
+    foreground-color: $primary-color-dark,
+    background-color: $primary-background-color-dark,
+    border-color: $primary-border-color-dark
+);

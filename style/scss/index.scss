@@ -1,0 +1,79 @@
+@import 'mixins';
+@import 'variables';
+@import 'global';
+
+// apply color definitions to CSS variables
+@include add-css-colors($COLORS_LIGHT_MODE, $COLORS_DARK_MODE);
+
+
+body {
+  // fonts
+  font-family: Castoro;
+  font-size: 24px;
+  // colors
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+.container {
+  padding-left: 16.25%;
+  padding-right: 16.25%;
+}
+
+.header {
+  padding-top: 160px;
+  .banner {
+    .heading {
+      height: 192px;
+      font-size: 128px;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+    }
+  }
+
+  .middle {
+    background-color: #EFEFEF;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    .content {
+      width: 636px;
+      font-size: 32px;
+    }
+  }
+}
+
+.footer {
+  background-color: #000;
+  padding: 64px auto;
+  height: 192px;
+}
+
+main {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
+.card {
+  width: 636px;
+  .heading {
+    width: 100%;
+    color: #AE0000;
+    border: 3px solid #AE0000;
+    border-style: none none solid none;
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+  .content {
+    padding-top: 16px;
+    /* padding-bottom: 16px; */
+  }
+  .title {
+    color: #949494;
+    font-style: italic;
+    font-size: 20px;
+  }
+  .row {
+
+  }
+}

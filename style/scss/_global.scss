@@ -1,0 +1,97 @@
+@import 'reset';
+@import 'variables';
+
+@font-face {
+  font-family: Castoro;
+  src: url('/fonts/Castoro/Castoro-Regular.ttf') format("truetype"); 
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6,
+.heading {
+  line-height: 1.2;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* Utilities */
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+}
+
+@for $i from 1 to 5 {
+  .border-#{$i} {
+    border: #{$i}px solid $primary-border-color;
+  }
+}
+
+.flex, .d-flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+
+.justify-center { justify-content: center; }
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+
+.self-center { align-self: center; }
+.self-start { align-self: start; }
+.self-end { align-self: end; }
+  
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+// gap x
+@for $i from 1 to 24 {
+  .gap-x-#{$i} {
+    & > *:not(:first-child) {
+      margin-left: $i * 4px;
+    }
+  }
+}
+
+// gap y
+@for $i from 1 to 24 {
+  .gap-y-#{$i} {
+    & > *:not(:first-child) {
+      margin-top: $i * 4px;
+    }
+  }
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  &.icon-facebook {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true');
+  }
+  &.icon-instagram {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true');
+  }
+  &.icon-line {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true');
+  }
+}
