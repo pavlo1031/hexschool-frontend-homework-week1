@@ -6,14 +6,26 @@ $primary-color-dark: #fff;
 $primary-background-color-dark: #000;
 $primary-border-color-dark: $primary-color-dark;
 
+$secondary-color: #000;
+$secondary-background-color: #EFEFEF;
+$secondary-color-dark: #000;
+$secondary-background-color-dark: #efefef9f;
+
+
 $COLORS_LIGHT_MODE: (
     foreground-color: $primary-color,
     background-color: $primary-background-color,
     border-color: $primary-border-color,
+
+    secondary-color: $secondary-color,
+    secondary-background-color: $secondary-background-color
 );
 
 $COLORS_DARK_MODE: (
     foreground-color: $primary-color-dark,
     background-color: $primary-background-color-dark,
-    border-color: $primary-border-color-dark
+    border-color: $primary-border-color-dark,
+
+    secondary-color: $secondary-color-dark,
+    secondary-background-color: $secondary-background-color-dark
 );

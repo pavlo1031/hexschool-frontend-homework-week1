@@ -33,7 +33,8 @@ body {
   }
 
   .middle {
-    background-color: #EFEFEF;
+    color: var(--secondary-color);
+    background-color: var(--secondary-background-color);
     padding-top: 48px;
     padding-bottom: 48px;
     .content {
