@@ -97,10 +97,12 @@ img {
   width: fit-content;
   height: fit-conten;
 }
+
 .icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
+  // 彈性尺寸
+  background-size: cover;
+  background-repeat: no-repeat;
+  
   &.icon-facebook {
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true');
   }
