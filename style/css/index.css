@@ -454,6 +454,13 @@ body {
   color: var(--background-color);
   border-color: var(--background-color);
 }
+
+.icon {
+  -webkit-clip-path: circle(32px at center);
+          clip-path: circle(32px at center);
+  border-radius: 50%/50%;
+  width: 64px;
+  height: 64px;
 }
 
 main {

@@ -2,6 +2,9 @@
 @import 'variables';
 @import 'global';
 
+// variables
+$icon-size: 64px;
+
 // apply color definitions to CSS variables
 @include add-css-colors($COLORS_LIGHT_MODE, $COLORS_DARK_MODE);
 
@@ -55,6 +58,12 @@ body {
     color: var(--background-color);
     border-color: var(--background-color);
   }
+}
+
+.icon {
+  @include circle($icon-size/2);
+  width: $icon-size;
+  height: $icon-size;
 }
 
 main {
