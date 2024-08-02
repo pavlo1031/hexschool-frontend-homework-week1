@@ -450,9 +450,10 @@ body {
   padding: 64px auto;
   height: 192px;
 }
-.footer .icon a {
-  border-radius: inherit;
-  border-color: orangered;
+.footer * {
+  color: var(--background-color);
+  border-color: var(--background-color);
+}
 }
 
 main {

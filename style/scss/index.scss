@@ -45,9 +45,16 @@ body {
 }
 
 .footer {
+  // TODO: 考慮 dark mode 的背景色應為何？
   background-color: #000;
   padding: 64px auto;
   height: 192px;
+  * {
+    // footer是暗色系背景
+    // 將「內文前景色」、「border色彩」 ➜ 設定為原有背景色
+    color: var(--background-color);
+    border-color: var(--background-color);
+  }
 }
 
 main {
