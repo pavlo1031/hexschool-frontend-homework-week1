@@ -98,6 +98,11 @@ img {
   height: fit-conten;
 }
 
+@mixin circle($radius, $position: center) {
+  clip-path: circle($radius at center);
+  border-radius: 50%/50%;
+}
+
 .icon {
   // 彈性尺寸
   background-size: cover;
