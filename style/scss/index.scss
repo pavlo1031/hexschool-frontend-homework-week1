@@ -47,6 +47,11 @@ body {
   }
 }
 
+main {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
 .footer {
   // TODO: 考慮 dark mode 的背景色應為何？
   background-color: #000;
@@ -64,11 +69,6 @@ body {
   @include circle($icon-size/2);
   width: $icon-size;
   height: $icon-size;
-}
-
-main {
-  padding-top: 80px;
-  padding-bottom: 160px;
 }
 
 .card {

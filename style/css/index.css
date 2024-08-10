@@ -445,6 +445,11 @@ body {
   font-size: 32px;
 }
 
+main {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}
+
 .footer {
   background-color: #000;
   padding: 64px auto;
@@ -461,11 +466,6 @@ body {
   border-radius: 50%/50%;
   width: 64px;
   height: 64px;
-}
-
-main {
-  padding-top: 80px;
-  padding-bottom: 160px;
 }
 
 .card {
