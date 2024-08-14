@@ -1,0 +1,67 @@
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color);
+}
+
+@for $i from 1 to 5 {
+  .border-#{$i} {
+    border: #{$i}px solid $primary-border-color;
+  }
+}
+
+// gap x
+@for $i from 1 to 24 {
+  .gap-x-#{$i} {
+    & > *:not(:first-child) {
+      margin-left: $i * 4px;
+    }
+  }
+}
+
+// gap y
+@for $i from 1 to 24 {
+  .gap-y-#{$i} {
+    & > *:not(:first-child) {
+      margin-top: $i * 4px;
+    }
+  }
+}
+
+.w-full { display: block; width: 100%; }
+.w-fit  { display: block; width: fit-content; }
+.h-full { display: block; height: 100%; }
+.h-fit  { display: block; height: fit-content; }
+
+.size-full {
+  display: block; 
+  width: 100%;
+  height: 100%;
+}
+
+.size-fit {
+  display: block; 
+  width: fit-content;
+  height: fit-conten;
+}
+
+@mixin circle($radius, $position: center) {
+  clip-path: circle($radius at center);
+  border-radius: 50%/50%;
+}
+
+.icon {
+  // 彈性尺寸
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &.icon-facebook {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/fb.png?raw=true');
+  }
+  &.icon-instagram {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/instagram.png?raw=true');
+  }
+  &.icon-line {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week1/line.png?raw=true');
+  }
+}
